@@ -10,4 +10,4 @@ We have recently been expanding and updating our cell types based on recent resu
 
  - We have also updated and added to our range of neurons associated with the adult mushroom body ([Li et al., 2020](http://doi.org/10.7554/eLife.62576)). We now have terms for the four unique [gamma-s Kenyon cells](https://v2.virtualflybrain.org/org.geppetto.frontend/geppetto?q=FBbt_00049830,SubclassesOf) (pictured below) as well as an increased range of [mushroom body output neurons (MBONS)](https://v2.virtualflybrain.org/org.geppetto.frontend/geppetto?q=FBbt_00047955,SubclassesOf), now going from MBON01 to MBON35.
  
- ![_config.yml]({{ site.baseurl }}/images/gamma-s_neuron_Screenshot_2021-01-25.png)
+ ![gamma-s Kenyon cells]({{ site.baseurl }}/images/gamma-s_neuron_Screenshot_2021-01-25.png)
