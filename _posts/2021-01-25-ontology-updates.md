@@ -1,8 +1,8 @@
 ---
+layout: image
 title: Thousands of new neuron types from predicted connectomics data now on VFB
 featimg: {{ site.baseurl }}/images/2021-01-25_gamma-s_neurons.png
 author: claire72
-layout: image
 tags: [connectomic,neuron,neuprint,FlyEM]
 category: [standard]
 ---
