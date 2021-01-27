@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Thousands of new neuron types from predicted connectomics data now on VFB
 featimg: 2021-01-25_gamma-s_neurons.png
 author: Claire72
