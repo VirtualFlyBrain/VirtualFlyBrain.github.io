@@ -1,86 +1,123 @@
-#
-# This file contains configuration flags to customize your site
-#
-
-# Name of your site (displayed in the header)
+full_rebuild: true
 name: VirtualFlyBrain
-
-# Short bio or description (displayed in the header)
-description: Blogging Virtual Fly Brain content and features
-
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://v2.virtualflybrain.org/images/vfbbrain_icon.png
-
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email:
-  facebook: Virtual-Fly-Brain-131151036987118
-  flickr:
-  github: VirtualFlyBrain
-  instagram:
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: virtualflybrain
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: channel/UC1g10aJo13fXpO9VwRJPdHg # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
-
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
-
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url:
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
-
-#
-# !! You don't need to change any of the configuration flags below !!
-#
-
+description: Blog about Virtual Fly Brain content and features
+destination: jekyllbuild
+url: #place url
+baseurl: #place folder name if site is served in subfolder
 permalink: /:title/
+paginate: 8
+paginate_path: /page/:num/
+infinite_scroll: true #change to false if you want to use pagination
+gems: [jekyll-paginate]
+tag_dir: /tag
+category_dir: /category
+author_dir: /author
+author_title_prefix: 'Posted by '
+media_folder: /media/compressed
+author_default_avatar: /profile-pic.jpg
+tumblr: "#"
+pinterest: "#"
+instagram: "#"
+twitter: "#"
+facebook: "#"
+youtube: "#"
+vimeo: "#"
+soundcloud: "#"
 
-# The release of Jekyll Now that you're using
-version: v1.2.0
-
-# Jekyll 3 now only supports Kramdown for Markdown
+encoding: utf-8
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post-material-sidebar-left"
+      type: "standard"
+      homedisplay: "featimg"
+markdown: kramdown
 kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
   syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
+relative_permalinks: false
+exclude: [.git, .gitignore, sass, .sass-cache, package.json, gruntfile.js, node_modules, README.md, jekyllbuild]
 
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :expanded # You might prefer to minify using :compressed
-
-# Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-
-# Exclude these files from your production _site
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME
+# prose.io configurations
+prose:
+  media: "img"
+  metadata:
+    _posts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+      - name: "layout"
+        field:
+          element: "select"
+          label: "Layout"
+          help: "display post at full width or with sidebar"
+          options:
+            - name: "with sidebar"
+              value: "post"
+            - name: "full width"
+              value: "post-full"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
+          help: "author id as defined within _data/authors.yml"
+          type: "text"
+      - name: "featimg"
+        field:
+          element: "text"
+          label: "Featured Image"
+          help: "featured image within the img-folder"
+          type: "text"
+      - name: "type"
+        field:
+          element: "select"
+          label: "Post Type"
+          help: "each type has some special feature"
+          options:
+            - name: "Standard"
+              value: "standard"
+            - name: "Image"
+              value: "image"
+            - name: "Gallery"
+              value: "gallery"
+            - name: "Audio"
+              value: "audio"
+            - name: "YouTube"
+              value: "youtube"
+            - name: "Vimeo"
+              value: "vimeo"
+      - name: "homedisplay"
+        field:
+          element: "select"
+          label: "Home Display"
+          help: "decide whether to display embedded element (for post types: audio, youtube, vimeo) or Featured Image on home page"
+          options:
+            - name: "Featured Image"
+              value: "featimg"
+            - name: "Embedded Element"
+              value: "iframe"
+      - name: "vimeo-embed"
+        field:
+          element: "text"
+          label: "Vimeo Embedding Code"
+          help: "Set post type to vimeo in order for this to work"
+      - name: "gallery-id"
+        field:
+          element: "text"
+          label: "Gallery ID"
+          help: "ID of the gallery defined within _data/galleries.yml - use include in content to use"
+      - name: "audio-embed"
+        field:
+          element: "text"
+          label: "Audio Embedding Code"
+          help: "Set post type to audio in order for this to work"
+      - name: "yt-video-id"
+        field:
+          element: "text"
+          label: "YouTube Video ID"
+          help: "Set post type to youtube in order for this to work. Do not set featured image, as the youtube video thumbnail will be used"
+          type: "text"
