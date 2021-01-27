@@ -15,11 +15,11 @@ author_dir: /author
 author_title_prefix: 'Posted by '
 media_folder: /media/compressed
 author_default_avatar: /profile-pic.jpg
-tumblr: "virtualflybrain"
-twitter: "virtualflybrain"
-facebook: "Virtual-Fly-Brain-131151036987118"
-youtube: "channel/UC1g10aJo13fXpO9VwRJPdHg"
-github: "VirtualFlyBrain"
+tumblr: "https://virtualflybrain.tumblr.com/"
+twitter: "https://twitter.com/virtualflybrain"
+facebook: "https://www.facebook.com/Virtual-Fly-Brain-131151036987118/"
+youtube: "https://www.youtube.com/channel/UC1g10aJo13fXpO9VwRJPdHg"
+github: "https://github.com/VirtualFlyBrain"
 
 encoding: utf-8
 defaults:
