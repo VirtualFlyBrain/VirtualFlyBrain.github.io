@@ -1,4 +1,4 @@
-<!-- logo version without slogan, add the class .ts-no-slogan if you want to work with some of the existing CSS -->
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -84,5 +84,21 @@
          y="70.598681"><tspan
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Courier;-inkscape-font-specification:Courier">VirtualFlyBrain</tspan><tspan
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.6667px;font-family:Courier;-inkscape-font-specification:Courier">.org</tspan></tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Slogan">
+    <text
+       xml:space="preserve"
+       id="text915"
+       style="font-style:normal;font-weight:normal;font-size:21.33330000000000126px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect917);fill:#000000;fill-opacity:1;stroke:none;"
+       transform="translate(0.64350523,24.453197)"><tspan
+         x="341.70117"
+         y="79.308719"><tspan
+           style="shape-inside:url(#rect917)">A hub for fly neural anatomy, </tspan></tspan><tspan
+         x="341.70117"
+         y="105.97535"><tspan
+           style="shape-inside:url(#rect917)">connectivity &amp; imaging data</tspan></tspan></text>
   </g>
 </svg>
