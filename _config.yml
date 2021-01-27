@@ -15,14 +15,15 @@ author_dir: /author
 author_title_prefix: 'Posted by '
 media_folder: /media/compressed
 author_default_avatar: /profile-pic.jpg
-tumblr: "#"
+tumblr: "virtualflybrain"
 pinterest: "#"
 instagram: "#"
 twitter: "#"
-facebook: "#"
-youtube: "#"
+facebook: "Virtual-Fly-Brain-131151036987118"
+youtube: "channel/UC1g10aJo13fXpO9VwRJPdHg"
 vimeo: "#"
 soundcloud: "#"
+github: "VirtualFlyBrain"
 
 encoding: utf-8
 defaults:
