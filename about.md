@@ -1,15 +1,11 @@
 ---
 layout: page
-title: About
+title: About Virtual Fly Brain
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+[Virtual Fly Brain](http://virtualflybrain.org) is the only resource integrating Drosophila neurobiology images, data and knowledge all regions of the nervous system from larva to adult.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[support@virtualflybrain.org](mailto:support@virtualflybrain.org)
