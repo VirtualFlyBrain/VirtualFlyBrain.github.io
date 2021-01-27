@@ -2,7 +2,7 @@ full_rebuild: true
 name: VirtualFlyBrain
 description: Blog about Virtual Fly Brain content and features
 destination: jekyllbuild
-url: #place url
+url: https://VirtualFlyBrain.org
 baseurl: #place folder name if site is served in subfolder
 permalink: /:title/
 paginate: 8
@@ -16,13 +16,9 @@ author_title_prefix: 'Posted by '
 media_folder: /media/compressed
 author_default_avatar: /profile-pic.jpg
 tumblr: "virtualflybrain"
-pinterest: "#"
-instagram: "#"
-twitter: "#"
+twitter: "virtualflybrain"
 facebook: "Virtual-Fly-Brain-131151036987118"
 youtube: "channel/UC1g10aJo13fXpO9VwRJPdHg"
-vimeo: "#"
-soundcloud: "#"
 github: "VirtualFlyBrain"
 
 encoding: utf-8
