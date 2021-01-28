@@ -1,5 +1,5 @@
 ---
-author: claire72
+author: clare72
 title: Thousands of new neuron types from predicted connectomics data now on VFB
 featimg: {{ site.baseurl | replace: '//', '/' }}/images/2021-01-25_gamma-s_neurons.png
 tags: [text]
